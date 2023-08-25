@@ -33,7 +33,7 @@ function draw() {
   textSize(32);
   if (timing){
     fill(255,0,0);
-    text(round(((60000-(round((millis()-startMillis)))))*100)/10,width/2,height/2);
+    text(round(((60000-(round((millis()-startMillis)))))*100)/1000,width/2,height/2);
     let angle = map(round((60000-(round((millis()-startMillis)))))/1000,60,0,0,TWO_PI);
     stroke(255);
     
