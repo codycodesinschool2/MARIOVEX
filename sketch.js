@@ -8,6 +8,15 @@ function preload() {
   FIREBACKGROUND = loadImage("SMMBACKGROND.jpg")
 }
 
+function keyPressed() {
+  if(!timing){
+    startMillis = millis();
+    timing = true;
+  } else {
+    timing = false;
+  }
+}
+
 function mousePressed() {
   if(!timing){
     startMillis = millis();
